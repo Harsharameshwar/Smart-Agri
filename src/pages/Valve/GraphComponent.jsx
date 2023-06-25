@@ -33,11 +33,16 @@ const GraphComponent = () => {
     yaxis: {
       title: {
         text: "Duration",
-        tickangle: -25,
+        tickangle: -45,
         font: { color: 'white' },
       },
     },
-    margin:true
+    margin: {
+      l: 80, // Set the left margin in pixels
+      r: 80, // Set the right margin in pixels
+      t: 80, // Set the top margin in pixels
+      b: 100, // Set the bottom margin in pixels
+    },
   };
 
   const plotData = graphData?.data?.map((trace) => ({
