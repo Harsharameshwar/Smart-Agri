@@ -19,10 +19,10 @@ export default function Header() {
       <Button color="inherit" component={Link} to="/about-us" >
         About Us
       </Button>
-      <Button color="inherit" component={Link} to="/contact-us">
+      <Button color="inherit" id="contact-us" component={Link} to="/contact-us">
         Contact Us
       </Button>
-      <Button color="inherit" component={Link} to="/login">
+      <Button color="inherit" id="login-url" component={Link} to="/login">
         Login
       </Button>
     </Toolbar>

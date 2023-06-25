@@ -33,6 +33,7 @@ import WeatherReport from "./pages/ClimatePrediction/WeatherReport";
 import SensorReports from "./pages/SensorReports/SensorReports";
 import IrrigationReport from "./pages/IrrigationReport/IrrigationReport";
 import WaterUsage from "./pages/WaterUsage/WaterUsage";
+// import Dashboard from "./pages/dashboard";
 
 const App = () => {
   const auth = useAuthUser();

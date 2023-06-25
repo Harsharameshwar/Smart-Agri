@@ -31,7 +31,7 @@ export default function MotorMode() {
       res.data && res.data.motorstatus === "on" && setMotor(true);
     }
 
-    // fetch();
+    fetch();
   });
   return (
     <>

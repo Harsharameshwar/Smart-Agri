@@ -231,7 +231,7 @@ const Dashboard = () => {
             <Card sx={{ maxWidth: 345 }} >
       <CardActionArea style={{backgroundColor:colors.primary[400]}}>
  
-        <CardContent onClick={()=>{navigate(`/soilmoisturesensor`)}}>
+        <CardContent id="soilmoisture-button" onClick={()=>{navigate(`/soilmoisturesensor`)}}>
           <Typography gutterBottom variant="h5" component="div">
             Soil Moisture Sensor
           </Typography>

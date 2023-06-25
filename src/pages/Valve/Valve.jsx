@@ -41,7 +41,7 @@ export default function Valve() {
       res1.data && res1.data.devicemode === "auto" && setValve(true)
     }
 
-    // fetch();
+    fetch();
   });
 
   // console.log(checked,checked1);
@@ -79,6 +79,7 @@ export default function Valve() {
                     <Switch
                       {...label}
                       checked={valve1}
+                      id="first-valve-button"
                       disabled={valve}
                       onChange={async (event) => {
                         try {
@@ -103,8 +104,8 @@ export default function Valve() {
                     <Typography>Off</Typography>
                     <Switch
                       {...label}
+                      id="second-valve-button"
                       checked={valve2}
-                      
                       onChange={async (event) => {
                         try {
                           const res = await axios.get(

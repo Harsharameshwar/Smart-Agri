@@ -91,6 +91,7 @@ const LoginPage = () => {
               <Grid item xs={12}>
                 <Input
                   placeholder="Email"
+                  id="email-input"
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
@@ -106,6 +107,7 @@ const LoginPage = () => {
               <Grid item xs={12}>
                 <Input
                   placeholder="Password"
+                  id="password-input"
                   required={true}
                   type={showPassword ? "text" : "password"}
                   onChange={(e) => {
@@ -144,6 +146,7 @@ const LoginPage = () => {
                   <Button
                     type="submit"
                     // isloading={load}
+                    id="login-button"
                     style={{
                       backgroundColor: `${colors.blueAccent[800]}`,
                       color: "#fff",
