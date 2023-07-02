@@ -5,8 +5,10 @@ import { ReactComponent as AgricultureIcon } from '../../assets/plant auto.svg';
 import { ReactComponent as PlantIcon } from '../../assets/increaseyield.svg';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+  const navigate=useNavigate();
   return (
     <>
       <Header />
@@ -44,8 +46,7 @@ const LandingPage = () => {
               Sustainable Farming
             </Typography>
             <Typography variant="body1" sx={{ textAlign: 'center', mt: 2 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit
-              amet justo lacinia, tempus lectus vitae.
+              Discover sustainable farming practices that promote environmental conservation and ensure long-term viability. 
             </Typography>
           </Box>
           <Box
@@ -62,8 +63,7 @@ const LandingPage = () => {
               Advanced Technology
             </Typography>
             <Typography variant="body1" sx={{ textAlign: 'center', mt: 2 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit
-              amet justo lacinia, tempus lectus vitae.
+              Explore cutting-edge agricultural technology solutions that optimize productivity, efficiency, and resource utilization. 
             </Typography>
           </Box>
           <Box
@@ -80,12 +80,11 @@ const LandingPage = () => {
               Increased Yield
             </Typography>
             <Typography variant="body1" sx={{ textAlign: 'center', mt: 2 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit
-              amet justo lacinia, tempus lectus vitae.
+              Learn strategies and techniques to boost crop yields and optimize agricultural production for enhanced profitability.
             </Typography>
           </Box>
         </Box>
-        <Button variant="contained" color="primary" size="large">
+        <Button onClick={()=>navigate('/login')} variant="contained" color="primary" size="large">
           Get Started
         </Button>
       </Box>

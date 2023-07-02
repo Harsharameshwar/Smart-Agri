@@ -48,6 +48,7 @@ const GraphComponentBorewell = () => {
       <Plot
           data={plotData}
           layout={plotLayout}
+          config={{responsive:true}}
       />
     </div>
   );

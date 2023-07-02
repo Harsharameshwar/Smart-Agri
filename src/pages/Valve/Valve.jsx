@@ -124,13 +124,7 @@ export default function Valve() {
                 </Box>
               </Box>
 
-              <Box
-                m="20px"
-                height="75vh"
-                maxWidth="150vh"
-                p="2px"
-                style={{ marginBottom: "10%" }}
-              >
+              <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                 <Typography variant="h4" gutterBottom>
                   Valves Duration
                 </Typography>

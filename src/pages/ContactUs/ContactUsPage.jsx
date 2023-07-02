@@ -34,9 +34,7 @@ const ContactUsPage = () => {
           </Typography>
           <Box sx={{ maxWidth: 400 }}>
             <Typography variant="body1" sx={{ mb: 4 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet justo lacinia, tempus lectus
-              vitae. Integer a felis et dui aliquet gravida vel non ante. Nullam et placerat elit. Aliquam nec
-              fermentum sapien.
+            We're here to assist you. If you have any questions, suggestions, or feedback, please feel free to reach out to us using the form below.
             </Typography>
             <form onSubmit={handleSubmit}>
               <TextField

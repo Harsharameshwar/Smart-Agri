@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, Sidebar, MenuItem } from "react-pro-sidebar";
 import { useProSidebar } from "react-pro-sidebar";
 
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { tokens } from "../../../theme";
 import { useTheme, Box, Typography, IconButton } from "@mui/material";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -65,13 +65,28 @@ const MyProSidebar = () => {
         setSelected("Valves Control");
       } else if (location?.pathname === "/motormode") {
         setSelected("Motor & Mode Control");
-      } 
+      } else if (location?.pathname === "/motorhistory") {
+        setSelected("Motor History");
+      } else if (location?.pathname === "/valvehistory") {
+        setSelected("Valve History");
+      } else if (location?.pathname === "/sensorreports") {
+        setSelected("Sensor Reports");
+      } else if (location?.pathname === "/weatherhistory") {
+        setSelected("Weather History");
+      } else if (location?.pathname === "/irrigationreports") {
+        setSelected("Irrigation Reports");
+      } else if (location?.pathname === "/weatherreport") {
+        setSelected("Climate Predictions");
+      } else if (location?.pathname === "/waterusageanalysis") {
+        setSelected("Water Usage Analysis");
+      }
       // else if (location?.pathname === "/weatherhistory") {
       //   setSelected("Weather History");
       // }
     }
     select();
   }, []);
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -126,7 +141,12 @@ const MyProSidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-                <Typography variant="h3" color={colors.grey[100]}>
+                {/* <img src="../../assets/seeding.png" alt="icon"/> */}
+                <Typography
+                  variant="h3"
+                  color={colors.grey[100]}
+                  onClick={() => navigate("/dashboard")}
+                >
                   SMART-AGRI
                 </Typography>
                 <IconButton

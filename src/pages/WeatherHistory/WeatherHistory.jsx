@@ -27,42 +27,13 @@ export default function WeatherHistory() {
                     style={{ height: "20px" }}
                   />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
-                  {/* <Typography variant="h4" gutterBottom >
-        Temprature Data Graph
-      </Typography> */}
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponentTemp />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
-                  {/* <Typography variant="h4" gutterBottom >
-        Temprature Data Graph
-      </Typography> */}
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
+ 
                   <GraphComponentHumi />
                 </Box>
-                {/* <Box
-                  style={{
-                    marginBottom: "10%",
-                    maxWidth: "100%",
-                    height: "auto",
-                  }}
-                >
-                    <GraphCard/>
-                  <img
-                    style={{ maxWidth: "100%", height: "auto" }}
-                    src={`data:image/png;base64,${seabornGraph}`}
-                    alt="Seaborn Graph"
-                  />
-                </Box> */}
                 <Box m="0 0 0 10%" maxWidth="75vh" height="70vh">
                   <WeatherPage />
                 </Box>

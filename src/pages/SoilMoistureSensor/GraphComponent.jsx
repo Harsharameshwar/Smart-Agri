@@ -37,6 +37,8 @@ const GraphComponent = () => {
     //   tickangle: -45,
       automargin: true, // Rotate the y-axis labels by 45 degrees
     },
+    // Height: "50%",
+    // Width: "50%",
   };
 
   const plotData = graphData?.data?.map((trace) => ({
@@ -44,11 +46,12 @@ const GraphComponent = () => {
     line: { color: "red" },
   }));
   return (
-    <div>
-        {console.log(graphData)}
+    <div style={{ height:"75vh"}}>
+        {/* {console.log(graphData)} */}
       <Plot
           data={plotData}
           layout={plotLayout}
+          config={{ responsive: true }}
       />
     </div>
   );

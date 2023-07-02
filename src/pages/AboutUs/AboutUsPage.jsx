@@ -14,20 +14,13 @@ const AboutUsPage = () => {
             About Us
           </Typography>
           <Typography variant="body1" sx={{ mb: 4 }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet justo lacinia, tempus lectus
-            vitae. Integer a felis et dui aliquet gravida vel non ante. Nullam et placerat elit. Aliquam nec
-            fermentum sapien.
+            Welcome to our company! We are dedicated to providing exceptional products and services to our valued customers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet justo lacinia, tempus lectus vitae. Integer a felis et dui aliquet gravida vel non ante. Nullam et placerat elit. Aliquam nec fermentum sapien.
           </Typography>
           <Typography variant="body1" sx={{ mb: 4 }}>
-            Sed tincidunt nunc et mauris ullamcorper, at tempus mauris lobortis. Duis nec semper mauris, sit amet
-            facilisis ex. Vivamus a nulla eget tortor lobortis suscipit. Vestibulum at efficitur leo. Cras luctus
-            convallis justo. Nulla at orci sed nulla semper fringilla a et lectus. Ut viverra augue eget nunc
-            ultrices vulputate. Suspendisse vitae justo vestibulum, mollis tellus ac, tincidunt erat.
+            Our mission is to deliver high-quality solutions that meet the needs of our customers. We strive to continuously improve and innovate, ensuring that our products and services remain at the forefront of the industry. We are committed to providing excellent customer support and building long-lasting relationships with our clients.
           </Typography>
           <Typography variant="body1">
-            Etiam ut risus scelerisque, scelerisque eros non, dignissim lectus. Duis dictum massa nec neque
-            convallis, in dignissim ligula facilisis. Nam consectetur sagittis felis, id varius lectus venenatis a.
-            Aenean ullamcorper leo id est feugiat, sit amet eleifend est hendrerit.
+            At our company, we value integrity, professionalism, and customer satisfaction. We work tirelessly to exceed expectations and make a positive impact in the market. Our dedicated team of experts is passionate about what they do and is driven to deliver outstanding results. We believe in teamwork, collaboration, and a customer-centric approach.
           </Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mb: { xs: 4, sm: 0 }, width: '100%', maxWidth: { xs: '100%', sm: '50%' } }}>

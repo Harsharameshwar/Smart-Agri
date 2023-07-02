@@ -29,38 +29,18 @@ export default function SensorReports() {
                     style={{ height: "20px" }}
                   />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponentTemp />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
 
                   <GraphComponentHumi />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
 
                   <GraphComponentSoil />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
 
                   <GraphComponentRain />
                 </Box>

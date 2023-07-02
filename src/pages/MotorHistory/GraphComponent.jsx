@@ -99,6 +99,7 @@ const plotLayout = {
       b: 80, // Set the bottom margin in pixels
     },
     width: 1150, // Set the width of the plotting area
+
   };
   const plotData = graphData?.data?.map((trace) => ({
     ...trace,
@@ -106,7 +107,7 @@ const plotLayout = {
 
   return (
     <div id="graph-container">
-      <Plot id="graph" data={plotData} layout={plotLayout} />
+      <Plot id="graph" data={plotData} layout={plotLayout} config={{responsive:true}} />
     </div>
   );
 };

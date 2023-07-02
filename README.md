@@ -1,11 +1,9 @@
 # React + Mui Dashboard
+Smart - Agri Application 
 
-
-## Acknowledgements
- - [Build a COMPLETE React Admin Dashboard App](https://youtu.be/wYpCWwD1oz)
 
 ## Demo
 
-https://reactmuidashboard.netlify.app
+https://smart-agri.vercel.app/
 
 

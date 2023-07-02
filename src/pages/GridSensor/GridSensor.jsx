@@ -132,7 +132,7 @@ export default function GridSensor(){
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="Grid Sensor" subtitle="Detects the current incoming from central grid" style={{height:"20px"}} />
       </Box>
-      <Box m="20px" height="75vh" p="2px" style={{marginBottom:"10%"}}>
+      <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
       <Typography variant="h4" gutterBottom >
         Sensor Data Graph
       </Typography>
@@ -171,7 +171,7 @@ export default function GridSensor(){
           },
         }}
       >
-        <Typography variant="h4" gutterBottom style={{margin:"10% 0 5% 0"}}>
+        <Typography variant="h4" gutterBottom style={{margin:"10% 0 0 0"}}>
         Sensor Data Table
       </Typography>
         <DataGrid

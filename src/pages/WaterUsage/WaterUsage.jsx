@@ -28,23 +28,13 @@ export default function WaterUsage() {
                     style={{ height: "20px" }}
                   />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <Typography variant="h4" gutterBottom>
                     Water Usage Analysis Of Borewell
                   </Typography>
                   <GraphComponentBorewell />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <Typography variant="h4" gutterBottom>
                     Water Usage Analysis Of Soil Moisture
                   </Typography>

@@ -32,45 +32,19 @@ export default function IrrigationReport() {
                     style={{ height: "20px" }}
                   />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  width="45vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponent1 />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponent2 />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponent3 />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponent4 />
                 </Box>
-                <Box
-                  m="20px"
-                  height="75vh"
-                  p="2px"
-                  //   style={{ marginBottom: "10%" }}
-                >
+                <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                   <GraphComponent5 />
                 </Box>
               </Box>

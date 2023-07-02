@@ -105,7 +105,7 @@ const GraphComponent = () => {
 
   return (
     <div id="graph-container">
-      <Plot id="graph" data={plotData} layout={plotLayout} />
+      <Plot id="graph" data={plotData} layout={plotLayout} config={{responsive:true}}/>
     </div>
   );
 };

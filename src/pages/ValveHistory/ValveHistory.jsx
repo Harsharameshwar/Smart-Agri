@@ -188,12 +188,7 @@ export default function ValveHistory() {
                   style={{ height: "20px" }}
                 />
               </Box>
-              <Box
-                m="20px"
-                height="75vh"
-                p="2px"
-                //   style={{ marginBottom: "10%" }}
-              >
+              <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                 <GraphComponent />
               </Box>
 

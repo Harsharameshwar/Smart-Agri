@@ -37,7 +37,7 @@ const GraphComponent = () => {
         font: { color: 'white' },
       },
     },
-    margin:true
+    automargin:true
   };
 
   const plotData = graphData?.data?.map((trace) => ({
@@ -50,6 +50,7 @@ const GraphComponent = () => {
       <Plot
           data={plotData}
           layout={plotLayout}
+          config={{responsive:true}}
       />
     </div>
   );

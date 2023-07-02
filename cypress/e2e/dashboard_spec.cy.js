@@ -41,6 +41,11 @@ describe('Dashboard', () => {
     cy.url({ timeout: 5000 });
     cy.get('#second-valve-button').click();
     ////////////////////////////////////////////////////////////////
+    cy.contains('Motor & Mode Control').click();
+    cy.url({ timeout: 20000 }).should('includes', '/motormode');
+    cy.get('#motor-button').click();
+    cy.url({ timeout: 5000 });
+    cy.get('#mode-button').click();
     
 
 

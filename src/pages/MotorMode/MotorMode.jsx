@@ -64,6 +64,7 @@ export default function MotorMode() {
                   <Stack direction="row" spacing={1} alignItems="center">
                     <Typography>Off</Typography>
                     <Switch
+                      id="motor-button"
                       {...label}
                       checked={motor}
                       onChange={async (event) => {
@@ -89,6 +90,7 @@ export default function MotorMode() {
                   <Stack direction="row" spacing={1} alignItems="center">
                     <Typography>Auto</Typography>
                     <Switch
+                      id="mode-button"
                       {...label}
                       checked={mode}
                       onChange={async (event) => {
@@ -122,13 +124,7 @@ export default function MotorMode() {
                 </Box>
               </Box>
 
-              <Box
-                m="20px"
-                height="75vh"
-                maxWidth="150vh"
-                p="2px"
-                style={{ marginBottom: "10%" }}
-              >
+              <Box m="20px" height="75vh" p="2px"  style={{marginBottom:"10%", overflowX: "scroll"}}>
                 <Typography variant="h4" gutterBottom>
                   Mode & Mode Analysis
                 </Typography>

@@ -51,6 +51,8 @@ const GraphComponent4 = () => {
       <Plot
           data={plotData}
           layout={plotLayout}
+          config={{responsive:true}}
+
       />
     </div>
   );
