@@ -7,7 +7,7 @@ const GraphComponent = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get('http://localhost:5001/generatemotorandvalve');
+      const response = await axios.get('https://mydesk.tk:5001/generatemotorandvalve');
       const data = await response.data.graph_valveduration;
       const data1=JSON.parse(data);
       setGraphData(data1);
