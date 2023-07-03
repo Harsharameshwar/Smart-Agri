@@ -72,7 +72,7 @@ const WaterCard = () => {
   useEffect(() => {
     async function fetch() {
       const res = await axios.get(
-        "http://localhost:5001/generate-irrigation-report"
+        "https://mydesk.tk:5001/generate-irrigation-report"
       );
     //   console.log(res.data.json_data);
       const json_data = JSON.parse(res.data.json_data);
