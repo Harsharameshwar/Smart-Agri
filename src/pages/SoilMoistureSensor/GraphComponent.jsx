@@ -1,24 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import Plot from 'react-plotly.js';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import Plot from "react-plotly.js";
+import axios from "axios";
 
 const GraphComponent = () => {
   const [graphData, setGraphData] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get('http://127.0.0.1:5001/generate-soil-graph');
+      const response = await axios.get(
+        "https://mydesk.tk:5001/generate-soil-graph"
+      );
       const data = await response.data;
-      const data1=JSON.parse(data);
+      const data1 = JSON.parse(data);
       setGraphData(data1);
-    //   console.log(graphData)
+      //   console.log(graphData)
     };
     fetchData();
-  },[]);
+  }, []);
   const plotLayout = {
-    title:{
-      text:"Soil Sensor Graph",
-      font: { color: 'white' },
+    title: {
+      text: "Soil Sensor Graph",
+      font: { color: "white" },
     },
     plot_bgcolor: "#3f4494",
     paper_bgcolor: "#141b2d",
@@ -34,7 +36,7 @@ const GraphComponent = () => {
         text: "Soil Moisture Levels",
         font: { color: "white" },
       },
-    //   tickangle: -45,
+      //   tickangle: -45,
       automargin: true, // Rotate the y-axis labels by 45 degrees
     },
     // Height: "50%",
@@ -46,13 +48,9 @@ const GraphComponent = () => {
     line: { color: "red" },
   }));
   return (
-    <div style={{ height:"75vh"}}>
-        {/* {console.log(graphData)} */}
-      <Plot
-          data={plotData}
-          layout={plotLayout}
-          config={{ responsive: true }}
-      />
+    <div style={{ height: "75vh" }}>
+      {/* {console.log(graphData)} */}
+      <Plot data={plotData} layout={plotLayout} config={{ responsive: true }} />
     </div>
   );
 };
